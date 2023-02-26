@@ -145,7 +145,7 @@ server {
 ```
 ![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide6.JPG)
 
-
+- **e. Create RPC Configs**
 
 
 
