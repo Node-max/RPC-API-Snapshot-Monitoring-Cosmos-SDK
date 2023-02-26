@@ -104,8 +104,47 @@ sudo nano /root/.nolus/config/app.toml
 - **then restart your node with the following command:**
 
 ```python
-sudo systemctl restart planqd
+sudo systemctl restart nolusd
 ```
+- **c. Looking for RPC Ports**
+
+```python
+sudo nano /root/.nolus/config/config.toml
+```
+
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/image%20(6).png)
+
+
+- **d. Create Config API**
+
+**CORRECT EXAMPLE**
+
+```python
+nano /etc/nginx/sites-enabled/api.nolus-test.max-node.xyz.conf
+```
+
+**Enter the following script and change it a little like the image below**
+
+```python
+server {
+    server_name api.nolus-test.max-node.xyz;
+    listen 80;
+    location / {
+        add_header Access-Control-Allow-Origin *;
+        add_header Access-Control-Max-Age 3600;
+        add_header Access-Control-Expose-Headers Content-Length;
+
+	proxy_set_header   X-Real-IP        $remote_addr;
+        proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
+        proxy_set_header   Host             $host;
+
+        proxy_pass http://ip-node:1337;
+
+    }
+}
+```
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide6.JPG)
+
 
 
 
