@@ -172,7 +172,8 @@ server {
          proxy_pass http://ip-node-kamu-yang-saya-suruh-simpan-baik-baik:1337;
 
     }
-}```
+}
+```
 
 ![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide7.JPG)
 
