@@ -51,15 +51,33 @@
 **1. Create dns TYPE A**
 ![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide3.JPG)
 
-- **1. Press Add Records**
-- **2. Choose Type A**
-- **3. Fill in the Name planq**
-- **4. IPV4 ADDRES Is your vps ip address**
+- **1.Press Add Records**
+- **2.Choose Type A**
+- **3.Fill in the Name nolustest**
+- **4.IPV4 ADDRES Is your vps ip address**
 - **5.turn off status proxies**
 - **6.Then Save**
 
 **2. Creating an API Subdomain**
 ![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide4.JPG)
+
+- **1.Press add record again**
+- **2.select CNAME type**
+- **3.Fill name with api.nolus-test**
+- **4.target fill with nolustest.max-node.xyz**
+- **5.Turn off Proxy Status**
+- **6.Press Save**
+
+**3. Create RPC Subdomains**
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide5.JPG)
+
+- **1.Press add record again**
+- **2.select CNAME type**
+- **3.Fill name with rpc.nolus-test**
+- **4.target fill with nolustest.max-node.xyz**
+- **5.Turn off Proxy Status**
+- **5.Press Save**
+
 
 
 
