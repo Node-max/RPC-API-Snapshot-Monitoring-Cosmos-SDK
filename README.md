@@ -95,13 +95,14 @@ sudo apt-get update && sudo apt-get install yarn -y
 ```python
 sudo nano /root/.nolus/config/app.toml
 ```
-![Image alt](https://github.com/HOW-TO-MAKE-RPC-API/blob/main/image%20(5).png)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/image%20(5).png)
 
-THIS INFORMATION BELOW IS IMPORTANT
+# THIS INFORMATION BELOW IS IMPORTANT
 
 -**Enter the Command Above into your Vps then scroll down and search as shown above change enable = false to enable = true**
 -**save well address = "tcp://0.0.0.0:1317"**
 -**then restart your node with the following command:**
+
 ```python
 sudo systemctl restart planqd
 ```
