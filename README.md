@@ -99,9 +99,9 @@ sudo nano /root/.nolus/config/app.toml
 
 # THIS INFORMATION BELOW IS IMPORTANT
 
--**Enter the Command Above into your Vps then scroll down and search as shown above change enable = false to enable = true**
--**save well address = "tcp://0.0.0.0:1317"**
--**then restart your node with the following command:**
+- **Enter the Command Above into your Vps then scroll down and search as shown above change enable = false to enable = true**
+- **save well address = "tcp://0.0.0.0:1317"**
+- **then restart your node with the following command:**
 
 ```python
 sudo systemctl restart planqd
