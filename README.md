@@ -147,8 +147,54 @@ server {
 
 - **e. Create RPC Configs**
 
+```python
+nano /etc/nginx/sites-enabled/rpc.nolus-test.max-node.xyz.conf
+```
 
+# CORRECT EXAMPLE
+```python
+nano /etc/nginx/sites-enabled/rpc.nolus-test.max-node.xyz.conf
+```
+- **Enter the following script and change it a little like the image below**
+```python
+server {
+    server_name rpc.nolus-test.max-node.xyz;
+    listen 80;
+    location / {
+        add_header Access-Control-Allow-Origin *;
+        add_header Access-Control-Max-Age 3600;
+        add_header Access-Control-Expose-Headers Content-Length;
 
+	proxy_set_header   X-Real-IP        $remote_addr;
+        proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
+        proxy_set_header   Host             $host;
+
+         proxy_pass http://ip-node-kamu-yang-saya-suruh-simpan-baik-baik:1337;
+
+    }
+}```
+
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide7.JPG)
+
+- **f.Installing ssl**
+
+```python
+sudo certbot --nginx --register-unsafely-without-email
+sudo certbot --nginx --redirect
+```
+**install ssl to the two subdomains above by entering the command above**
+
+- **g. Check api and rpc**
+
+**Enter your browser then check the subdomain that you created earlier like**
+# API
+```python
+https://api.nolus-test.max-node.xyz/
+```
+# RPC
+```python
+https://rpc.nolus-test.max-node.xyz/
+```
 
 
 
