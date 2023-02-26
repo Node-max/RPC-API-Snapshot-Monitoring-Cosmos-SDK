@@ -78,6 +78,35 @@
 - **5.Turn off Proxy Status**
 - **5.Press Save**
 
+**4. Configuration on Vps**
+# TRY TO INSTALL 1 1 COMMAND DON'T OVERWRITE IMMEDIATELY
+
+```python
+sudo apt update && sudo apt upgrade -y
+sudo apt install nginx certbot python3-certbot-nginx -y
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get update && apt install -y nodejs git
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn -y
+```
+- **b. Activate the Api Server And Find The Port**
+
+```python
+sudo nano /root/.nolus/config/app.toml
+```
+![Image alt](https://github.com/HOW-TO-MAKE-RPC-API/blob/main/image%20(5).png)
+
+THIS INFORMATION BELOW IS IMPORTANT
+
+-**Enter the Command Above into your Vps then scroll down and search as shown above change enable = false to enable = true**
+-**save well address = "tcp://0.0.0.0:1317"**
+-**then restart your node with the following command:**
+```python
+sudo systemctl restart planqd
+```
+
+
 
 
 
