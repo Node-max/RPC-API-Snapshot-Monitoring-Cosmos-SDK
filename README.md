@@ -147,10 +147,6 @@ server {
 
 - **e. Create RPC Configs**
 
-```python
-nano /etc/nginx/sites-enabled/rpc.nolus-test.max-node.xyz.conf
-```
-
 # CORRECT EXAMPLE
 ```python
 nano /etc/nginx/sites-enabled/rpc.nolus-test.max-node.xyz.conf
