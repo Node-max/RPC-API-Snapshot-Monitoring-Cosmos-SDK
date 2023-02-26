@@ -3,7 +3,7 @@
 # This is an example of RPC-API. Substituti it with your owen information
 
 # Make sure you are running the node you want to make api+RPC for
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/image.png)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/1.png)
 
 # 1. Have a Domain
 - **Buy a Domain at [idcloudhost.com](https://idcloudhost.com/) or wherever it is**
@@ -11,31 +11,31 @@
 # 2. Connecting the domain to cloudflare
 
 **a. Add site**
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/image%20(1).png)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/2.png)
 
 - **Enter https://cloudflare.com/**
 - **Then register your account to cloudflare**
 - **then hit add a site**
 
 **b. Register domain**
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide1.JPG)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/3.jpg)
 
 - **Enter the domain that you bought in the format above without http**
 - **Then press add site**
 
 **c. Select Plan**
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/image%20(2).png)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/4.png)
 
 - **In the payment section, select the free one** 
 - **Then press continue**
 
 **d. Review Dns Record**
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/image%20(3).png)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/5.png)
 
 - **In this section, just continue**
 
 **e. Change your nameservers**
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/image%20(4).png)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/6.png)
 
 - **First open the provider where you bought the domain then**
 - **press manage on your domain**
@@ -45,14 +45,14 @@
 - **and wait a few moments to connect**
 
 **f. Setting DNS**
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide2.JPG)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/7.jpg)
 
 - **press dns**
 - **then press record**
 
 **g. Create a Subdomain**
 **1. Create dns TYPE A**
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide3.JPG)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/8.jpg)
 
 - **1.Press Add Records**
 - **2.Choose Type A**
@@ -62,7 +62,7 @@
 - **6.Then Save**
 
 **2. Creating an API Subdomain**
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide4.JPG)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/9.jpg)
 
 - **1.Press add record again**
 - **2.select CNAME type**
@@ -72,7 +72,7 @@
 - **6.Press Save**
 
 **3. Create RPC Subdomains**
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide5.JPG)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/10.jpg)
 
 - **1.Press add record again**
 - **2.select CNAME type**
@@ -98,7 +98,7 @@ sudo apt-get update && sudo apt-get install yarn -y
 ```python
 sudo nano /root/.nolus/config/app.toml
 ```
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/image%20(5).png)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/11.png)
 
 # THIS INFORMATION BELOW IS IMPORTANT
 
@@ -115,7 +115,7 @@ sudo systemctl restart nolusd
 sudo nano /root/.nolus/config/config.toml
 ```
 
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/image%20(6).png)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/12.png)
 
 
 - **d. Create Config API**
@@ -146,7 +146,7 @@ server {
     }
 }
 ```
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide6.JPG)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/13.jpg)
 
 - **e. Create RPC Configs**
 
@@ -174,7 +174,7 @@ server {
 }
 ```
 
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/Slide7.JPG)
+![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/14.jpg)
 
 - **f.Installing ssl**
 
