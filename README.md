@@ -182,7 +182,7 @@ sudo certbot --nginx --redirect
 ```
 **install ssl to the two subdomains above by entering the command above**
 
-- **g. Check api and rpc**
+# Check api and rpc
 
 **Enter your browser then check the subdomain that you created earlier like**
 # API
