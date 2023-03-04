@@ -185,14 +185,15 @@ sudo certbot --nginx --redirect
 # Check api and rpc
 
 **Enter your browser then check the subdomain that you created earlier like**
-# API
-```python
-https://api.nolus-test.max-node.xyz/
-```
 # RPC
 ```python
-https://rpc.nolus-test.max-node.xyz/
+https://rpc-nolus.max-node.xyz/
 ```
+# API
+```python
+https://api-nolus.max-node.xyz
+```
+
 
 
 
