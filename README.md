@@ -1,1 +1,1 @@
-# This is an example of RPC-API. Substituti it with your owen information
+# This is an example of RPC-API-Snapshot. Substituti it with your owen information
