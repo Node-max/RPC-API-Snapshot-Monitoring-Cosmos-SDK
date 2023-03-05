@@ -1,7 +1,6 @@
 # This is an example of RPC-API. Substituti it with your owen information
 
 # Make sure you are running the node you want to make api+RPC for
-![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/1.png)
 
 # 1. Have a Domain
 - **Buy a Domain at [idcloudhost.com](https://idcloudhost.com/) or wherever it is**
