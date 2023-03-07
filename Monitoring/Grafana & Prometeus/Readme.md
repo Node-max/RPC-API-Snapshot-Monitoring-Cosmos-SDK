@@ -1,3 +1,4 @@
+# Grafana & Prometeus
 ## Install monitoring stack
 - **install the monitoring using the auto installer from kjnode**
 ```python
