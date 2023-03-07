@@ -6,7 +6,9 @@ wget -O install_monitoring.sh https://raw.githubusercontent.com/kj89/cosmos_node
 ```
 ## Setting Config Node
 - **Changing Node Configs**
+- 
 ![image](https://user-images.githubusercontent.com/61777095/223358599-366a3f43-d027-48ab-baf3-f81671c7aed2.png)
+
 Follow the instructions below
 **step into**
 ```python
@@ -26,8 +28,11 @@ sudo systemctl restart nolusd
 nano cosmos_node_monitoring/prometheus/prometheus.yml
 ```
 ![image](https://user-images.githubusercontent.com/61777095/223359656-a2d1686e-740b-483d-83a7-008d5c5ef016.png)
+
 **delete all contents by pressing on the keyboard SHIFT+DOWN ARROW for the block code then pressing on the keyboard CTRL+K**
+
 ![image](https://user-images.githubusercontent.com/61777095/223359769-84c108d1-4139-48ce-8b53-69461c01d908.png)
+
 **if it has been deleted, change it with the following config**
 ```python
 global:
@@ -49,6 +54,7 @@ scrape_configs:
       - targets: ["139.59.242.182:43660"] # custom with your own!
 ```
 ![image](https://user-images.githubusercontent.com/61777095/223359937-51c49937-f64a-4d33-a1c7-b3b75677e397.png)
+
 **if you have pressed on the keyboard CTRL + X then press Y then ENTER**
 ## Enable Firewalls
 - **If you don't have a firewall installed, install the ufw firewall with the command:**
@@ -129,24 +135,33 @@ services:
 ```
 **if you have pressed on the keyboard CTRL + X then press Y then ENTER**
 ## Run Docker
+
 ![image](https://user-images.githubusercontent.com/61777095/223361327-5e987167-a9b0-413f-aff8-14738e398610.png)
+
 **Run docker using the following command**
 ```python
 cd $HOME/cosmos_node_monitoring
 sudo docker compose up -d
 ```
 ## Make sure your prometheus is green
+
 <img width="514" alt="image" src="https://user-images.githubusercontent.com/61777095/223361612-0a002beb-38ce-479c-a8dc-a21b896cd7ab.png">
+
 **To enter Prometheus you can change the following domains, make sure everything is green!**
 http://ipserver:9090/targets?search=
 ## Create Dashboard Monitor
 **first you have to login to your domain**
 http://ipserver:9999/login
+
 <img width="354" alt="image" src="https://user-images.githubusercontent.com/61777095/223362351-ddb67740-4dbb-418d-8676-8f535c0d0946.png">
+
 **Enter username and password using admin**
+
 <img width="381" alt="image" src="https://user-images.githubusercontent.com/61777095/223362486-6d0ff04b-01cc-445b-8cf4-a4b8ff2c26be.png">
+
 **Create data sources**
 **please read this carefully**
+
 <img width="477" alt="image" src="https://user-images.githubusercontent.com/61777095/223362696-48d42175-182b-4bde-b359-cd5b09f8aa3f.png">
 
 <img width="474" alt="image" src="https://user-images.githubusercontent.com/61777095/223362745-14e414cd-e0de-4aa1-bca7-41b8667433a5.png">
@@ -157,10 +172,14 @@ http://ipserver:9999/login
 - **while url use http://ipserver:9090/**
 - **then scroll down press save and test**
 ## Create a dashboard view
+
 <img width="421" alt="image" src="https://user-images.githubusercontent.com/61777095/223363262-ab3891a2-12f6-4106-8501-7e48d7404d6c.png">
+
 **hover over the box image**
 **then select import**
+
 <img width="428" alt="image" src="https://user-images.githubusercontent.com/61777095/223363449-67a769c7-e81f-4f3f-8527-e25292fb73d2.png">
+
 **in the Import section via the json panel fill in the following code**
 ```python
 {
@@ -2477,9 +2496,12 @@ http://ipserver:9999/login
   "weekStart": ""
 }
 ```
+
 <img width="429" alt="image" src="https://user-images.githubusercontent.com/61777095/223363629-e5847a4a-db6b-4688-be8d-ed1f827c9718.png">
+
 **in this section you can change the name and uid to your heart's content**
 **then hit import**
+
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/61777095/223363907-ff54451f-ca4a-401f-855c-5fc2ba7733d4.png">
 
 
