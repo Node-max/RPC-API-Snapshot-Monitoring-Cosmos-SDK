@@ -61,12 +61,15 @@ scrape_configs:
 ``python
 sudo apt-get install ufw
 ```
+
 - **Create firewall rules to allow incoming traffic on ports 9100, 43660, and 9090 with the command:**
+
 ```python
 sudo ufw allow 9100/tcp
 sudo ufw allow 43660/tcp
 sudo ufw allow 9090/tcp
 ```
+
 **The above command will create a new firewall rule that allows incoming traffic on the specified port.**
 **Activate ufw with the command:**
 ```python
