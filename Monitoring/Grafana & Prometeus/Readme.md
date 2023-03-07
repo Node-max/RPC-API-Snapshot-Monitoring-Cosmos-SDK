@@ -58,7 +58,7 @@ scrape_configs:
 **if you have pressed on the keyboard CTRL + X then press Y then ENTER**
 ## Enable Firewalls
 - **If you don't have a firewall installed, install the ufw firewall with the command:**
-``python
+```python
 sudo apt-get install ufw
 ```
 **Create firewall rules to allow incoming traffic on ports 9100, 43660, and 9090 with the command:**
