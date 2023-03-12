@@ -85,6 +85,6 @@ I recommend using mobaxtream for this section to make it easier
 **3. Create a www folder**
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/61777095/224561021-b25d03ba-6cd2-4163-9071-a0b99edce1de.png">
 
-**a. Press Pictures Folder +
-b. Enter Folder Name www**
+**a. Press Pictures Folder +**
+**b. Enter Folder Name www**
 
