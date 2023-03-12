@@ -88,3 +88,24 @@ I recommend using mobaxtream for this section to make it easier
 **a. Press Pictures Folder +**
 **b. Enter Folder Name www**
 
+**4. Create Snapshot Folders**
+<img width="436" alt="image" src="https://user-images.githubusercontent.com/61777095/224561386-f08624d3-a37b-4f98-a3bd-8b08b03c5ffa.png">
+
+**a. Press Pictures Folder +**
+**b. Enter the Snapshot Folder Name**
+
+**5. Create a Nolus Folder**
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/61777095/224561471-ffa191cd-db81-48b9-9b03-585e2d7daaa7.png">
+
+**a. Press Pictures Folder +**
+**b. Enter the Snapshot Folder Name**
+
+**4. Create Snapshot Files**
+```pytho
+sudo apt install lz4
+cd $HOME/.nolusd
+sudo systemctl stop nolusd
+```
+```python
+tar -cf - data | lz4 > /var/www/snapshot/nolus/nolus-snapshot-$(date +%Y%m%d).tar.lz4
+```
