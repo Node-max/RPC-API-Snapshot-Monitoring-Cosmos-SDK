@@ -40,6 +40,7 @@
 - **Copy the server name that Cloudflare has provided, then move it to your provider**
 - **like the picture above**
 - **and wait a few moments to connect**
+- 
 **f. Setting DNS**
 ![Image alt](https://github.com/Node-max/HOW-TO-MAKE-RPC-API/blob/main/foto/7.jpg)
 
