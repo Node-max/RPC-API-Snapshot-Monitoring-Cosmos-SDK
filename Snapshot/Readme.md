@@ -1,4 +1,4 @@
-# This is an example of RPC-API. Substituti it with your owen information
+# This is an example of Snapshot. Substituti it with your owen information
 
 # Make sure you are running the node you want to make api+RPC for
 
