@@ -109,3 +109,7 @@ sudo systemctl stop nolusd
 ```python
 tar -cf - data | lz4 > /var/www/snapshot/nolus/nolus-snapshot-$(date +%Y%m%d).tar.lz4
 ```
+<img width="470" alt="image" src="https://user-images.githubusercontent.com/61777095/224561710-bcd0739d-63d4-400a-ace3-1729b4958cbc.png">
+
+**a. The process is long because the snapshot file is already zipped**
+**b. If you can type the command it means it's done**
