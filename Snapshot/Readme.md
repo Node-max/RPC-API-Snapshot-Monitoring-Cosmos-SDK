@@ -113,3 +113,46 @@ tar -cf - data | lz4 > /var/www/snapshot/nolus/nolus-snapshot-$(date +%Y%m%d).ta
 
 **a. The process is long because the snapshot file is already zipped**
 **b. If you can type the command it means it's done**
+
+**5. Create a Config Snapshot**
+Please Follow The Following Instructions
+```python
+nano /etc/nginx/sites-enabled/snapshot.planq.spt-node.xyz.conf
+```
+**Enter the following script and change it a little like the image below**
+```python
+server {
+        root /var/www/html;
+        index index.html index.htm index.nginx-debian.html;
+        server_name <your_domain_name>; 
+
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                # try_files $uri $uri/ =404;
+                root /var/www/snapshot/;
+                autoindex on;
+        } 
+}
+```
+<img width="488" alt="image" src="https://user-images.githubusercontent.com/61777095/224607532-221f3ca6-d340-400d-a7e1-17bc7a75ac05.png">
+
+**a. Don't forget to remove the <> sign**
+**b. Press ctrl+o to save, ctrl+c to exit**
+
+#6. 
+a. Installing ssl
+```python
+sudo certbot --nginx --register-unsafely-without-email
+sudo certbot --nginx --redirect
+```
+**Select the required subdomain that needs to be registered**
+#7. Run nginx
+```python
+sudo systemctl start nginx
+```
+#8. Check snapshots
+Enter your browser then check the subdomain that you created earlier like
+
+
